@@ -8,7 +8,6 @@ const TotalPatientsBox = () => {
         <div className="card-body p-4">
           <div className="media ai-icon d-flex">
             <span className="me-3 bgl-primary text-primary">
-              <i className="ti-user"></i>
               <CupIcon />
             </span>
             <div className="media-body">

@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import React, { Fragment } from "react";
 import { Routes, Route, Switch } from "react-router-dom";
 import Login from "./pages/auth/login";

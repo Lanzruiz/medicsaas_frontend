@@ -1,6 +1,7 @@
 import React from "react";
 import BodyHeader from "./BodyHeader";
 import BoxStatistics from "./BoxStatistics";
+import CardStatistics from "./CardStatistics";
 
 const Body = () => {
   return (
@@ -8,6 +9,7 @@ const Body = () => {
       <BodyHeader />
       <div className="row">
         <BoxStatistics />
+        <CardStatistics />
       </div>
     </div>
   );
