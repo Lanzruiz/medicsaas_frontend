@@ -8723,7 +8723,7 @@ a {
   padding-left: 40px; }
   @media only screen and (max-width: 1600px) {
     .content-body .container-fluid, .content-body .container-sm, .content-body .container-md, .content-body .container-lg, .content-body .container-xl, .content-body .container-xxl {
-      padding-top: 30px;
+      padding-top: 3px;
       padding-right: 30px;
       padding-left: 30px; } }
   @media only screen and (max-width: 767px) {
@@ -10833,7 +10833,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
       [data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .deznav .metismenu > li > a i {
         padding: 0; }
     [data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .deznav .metismenu > li.mm-active > a {
-      background: var(--primary);
+      background: #c6cffb;
       border-radius: 0.5rem;
       color: #fff; }
       [data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .deznav .metismenu > li.mm-active > a i {
@@ -10844,7 +10844,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
       top: auto; }
     [data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .deznav .metismenu > li:hover > a {
       border-radius: 0.5rem;
-      background: var(--primary);
+      background: #b9c3ec;
       color: #fff; }
       [data-theme-version="dark"][data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .deznav .metismenu > li:hover > a {
         background: #1e2746; }

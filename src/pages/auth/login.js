@@ -63,10 +63,7 @@ const login = () => {
                                     className="custom-control-label ms-1"
                                     for="basic_checkbox_1"
                                   >
-                                    I agree with Davur{" "}
-                                    <a href="javascript:void(0);">
-                                      Terms & Conditions
-                                    </a>
+                                    I agree with Davur <a>Terms & Conditions</a>
                                   </label>
                                 </div>
                                 <div className=" form-check ms-1">

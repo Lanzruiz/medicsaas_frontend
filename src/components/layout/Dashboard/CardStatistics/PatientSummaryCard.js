@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import DonutChart from "../../../resources/DonutChart";
 
 const PatientSummaryCard = () => {
   return (
@@ -89,11 +90,13 @@ const PatientSummaryCard = () => {
             <div className="widget-timeline-icon">
               <div className="row align-items-center">
                 <div className="col-xl-3 col-lg-2 col-xxl-4 col-sm-3 col-md-3 my-2 text-center text-sm-left">
-                  <div id="chart" className="d-inline-block"></div>
+                  <div className="d-inline-block">
+                    <DonutChart />
+                  </div>
                 </div>
                 <div className="col-xl-9 col-lg-10 col-xxl-8 col-sm-9 col-md-9">
                   <div className="d-flex align-items-center mb-3">
-                    <p className="mb-0 fs-14 me-2 col-4 col-xxl-5 px-0">
+                    <p class="mb-0 fs-14 me-2 col-4 col-xxl-2 px-0">
                       Immunities (24%)
                     </p>
                     <div
@@ -113,8 +116,8 @@ const PatientSummaryCard = () => {
                     </span>
                   </div>
                   <div className="d-flex align-items-center  mb-3">
-                    <p className="mb-0 fs-14 me-2 col-4 col-xxl-5 px-0">
-                      Heart Beat (41%)
+                    <p class="mb-0 fs-14 me-2 col-4 col-xxl-2 px-0">
+                      Immunities (24%)
                     </p>
                     <div
                       className="progress mb-0"
@@ -133,8 +136,8 @@ const PatientSummaryCard = () => {
                     </span>
                   </div>
                   <div className="d-flex align-items-center">
-                    <p className="mb-0 fs-14 me-2 col-4 col-xxl-5 px-0">
-                      Weigth (15%)
+                    <p class="mb-0 fs-14 me-2 col-4 col-xxl-2 px-0">
+                      Immunities (24%)
                     </p>
                     <div
                       className="progress mb-0"

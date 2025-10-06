@@ -1,22 +1,30 @@
 import React from "react";
+import PeopleIcon from "./icons/PeopleIcon";
+import NursesIcon from "./icons/NursesIcon";
+import PatientIcon from "./icons/PatientIcon";
+import DashboardIcon from "./icons/DashboardIcon";
+import MedicineIcon from "./icons/MedicineIcon";
+import SuppliesIcon from "./icons/SuppliesIcon";
 
 const SideBar = () => {
   return (
     <div className="deznav">
       <div className="deznav-scroll">
         <ul className="metismenu" id="menu">
-          <li>
+          <li className="mm-active">
             <a
               className="has-arrow ai-icon"
               href="javascript:void()"
               aria-expanded="false"
             >
-              <i className="flaticon-381-networking"></i>
+              <DashboardIcon />
               <span className="nav-text">Dashboard</span>
             </a>
             <ul aria-expanded="false">
               <li>
-                <a href="index.html">Dashboard</a>
+                <a className="mm-active" href="index.html">
+                  Dashboard
+                </a>
               </li>
               <li>
                 <a href="page-analytics.html">Analytics</a>
@@ -36,6 +44,30 @@ const SideBar = () => {
             </ul>
           </li>
           <li>
+            <a className="fi fi-rr-users" aria-expanded="false">
+              <PatientIcon />
+              <span className="nav-text">Patients</span>
+            </a>
+          </li>
+          <li>
+            <a className="fi fi-rr-users" aria-expanded="false">
+              <NursesIcon />
+              <span className="nav-text">Nurses</span>
+            </a>
+          </li>
+          <li>
+            <a className="fi fi-rr-users" aria-expanded="false">
+              <MedicineIcon />
+              <span className="nav-text">Medicine</span>
+            </a>
+          </li>
+          <li>
+            <a className="fi fi-rr-users" aria-expanded="false">
+              <SuppliesIcon />
+              <span className="nav-text">Supplies</span>
+            </a>
+          </li>
+          {/* <li>
             <a
               className="has-arrow ai-icon"
               href="javascript:void()"
@@ -96,7 +128,7 @@ const SideBar = () => {
                 <a href="../frontend/front-login.html">Login</a>
               </li>
             </ul>
-          </li>
+          </li> */}
           <li>
             <a
               className="has-arrow ai-icon"
