@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link, Navigate } from "react-router-dom";
 import PatientIcon from "../resources/icons/PatientIcon";
 import NursesIcon from "../resources/icons/NursesIcon";
 import DashboardIcon from "../resources/icons/DashboardIcon";
@@ -44,10 +44,14 @@ const SideMenu = () => {
             </ul>
           </li>
           <li>
-            <a className="fi fi-rr-users" aria-expanded="false">
+            <Link
+              to="/patients"
+              className="fi fi-rr-users"
+              aria-expanded="false"
+            >
               <PatientIcon />
               <span className="nav-text">Patients</span>
-            </a>
+            </Link>
           </li>
           <li>
             <a className="fi fi-rr-users" aria-expanded="false">

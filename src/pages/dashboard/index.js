@@ -12,6 +12,7 @@ import Preloader from "../../components/layout/Dashboard/Preloader";
 const index = () => {
   return (
     <Fragment>
+      <Preloader />
       <div id="main-wrapper">
         <Navbar />
         <ChatBox />
