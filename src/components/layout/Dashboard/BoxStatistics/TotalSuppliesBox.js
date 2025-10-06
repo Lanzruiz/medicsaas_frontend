@@ -1,5 +1,5 @@
 import React from "react";
-import PeopleIcon from "../icons/PeopleIcon";
+import PeopleIcon from "../../../resources/icons/PeopleIcon";
 
 const TotalSuppliesBox = () => {
   return (

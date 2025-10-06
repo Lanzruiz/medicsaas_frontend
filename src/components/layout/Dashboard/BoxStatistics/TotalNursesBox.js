@@ -1,5 +1,5 @@
 import React from "react";
-import DollarIcon from "../icons/DollarIcon";
+import DollarIcon from "../../../resources/icons/DollarIcon";
 
 const TotalNursesBox = () => {
   return (

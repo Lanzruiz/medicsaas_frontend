@@ -1,5 +1,5 @@
 import React from "react";
-import CupIcon from "../icons/CupIcon";
+import CupIcon from "../../../resources/icons/CupIcon";
 
 const TotalPatientsBox = () => {
   return (

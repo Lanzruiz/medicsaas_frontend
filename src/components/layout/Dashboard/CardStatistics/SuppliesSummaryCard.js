@@ -1,5 +1,6 @@
 import React from "react";
 import ApexCharts from "apexcharts";
+import LineChart from "../../../resources/LineChart";
 
 const SuppliesSummaryCard = () => {
   return (
@@ -7,10 +8,8 @@ const SuppliesSummaryCard = () => {
       <div className="card">
         <div className="card-header border-0 pb-0 d-sm-flex d-block">
           <div>
-            <h4 className="card-title mb-1">Revenue</h4>
-            <small className="mb-0">
-              Lorem ipsum dolor sit amet, consectetur
-            </small>
+            <h4 className="card-title mb-1">Supplies</h4>
+            <small className="mb-0">Analytical data of supplies</small>
           </div>
           <select className="form-control style-1 default-select  mt-3 mt-sm-0">
             <option>Monthly</option>
@@ -51,7 +50,7 @@ const SuppliesSummaryCard = () => {
               </div>
             </div>
           </div>
-          <div id="chartBar"></div>
+          <LineChart />
         </div>
       </div>
     </div>

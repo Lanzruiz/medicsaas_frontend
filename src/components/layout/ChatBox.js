@@ -1,5 +1,5 @@
 import React from "react";
-import Icon1 from "./icons/icon";
+import Icon1 from "../resources/icons/icon";
 
 const ChatBox = () => {
   return (

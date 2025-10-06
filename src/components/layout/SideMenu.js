@@ -1,12 +1,12 @@
 import React from "react";
-import PeopleIcon from "./icons/PeopleIcon";
-import NursesIcon from "./icons/NursesIcon";
-import PatientIcon from "./icons/PatientIcon";
-import DashboardIcon from "./icons/DashboardIcon";
-import MedicineIcon from "./icons/MedicineIcon";
-import SuppliesIcon from "./icons/SuppliesIcon";
 
-const SideBar = () => {
+import PatientIcon from "../resources/icons/PatientIcon";
+import NursesIcon from "../resources/icons/NursesIcon";
+import DashboardIcon from "../resources/icons/DashboardIcon";
+import MedicineIcon from "../resources/icons/MedicineIcon";
+import SuppliesIcon from "../resources/icons/SuppliesIcon";
+
+const SideMenu = () => {
   return (
     <div className="deznav">
       <div className="deznav-scroll">
@@ -631,4 +631,4 @@ const SideBar = () => {
   );
 };
 
-export default SideBar;
+export default SideMenu;

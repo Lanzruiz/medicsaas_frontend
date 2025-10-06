@@ -1,8 +1,8 @@
 import React from "react";
-import Capa_1 from "./icons/Capa_1";
-import Bill from "./icons/Bill";
-import Dropdown from "./icons/Dropdown";
-import Logout from "./icons/Logout";
+import Capa_1 from "../resources/icons/Capa_1";
+import Bill from "../resources/icons/Bill";
+import Dropdown from "../resources/icons/Dropdown";
+import Logout from "../resources/icons/Logout";
 
 const Header = () => {
   return (

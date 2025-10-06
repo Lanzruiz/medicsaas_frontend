@@ -1,6 +1,5 @@
 import React from "react";
-import OrdersIcon from "../icons/OrdersIcon";
-
+import OrdersIcon from "../../../resources/icons/OrdersIcon";
 const TotalMedsBox = () => {
   return (
     <div className="col-xl-3 col-xxl-3 col-lg-6 col-md-6 col-sm-6">

@@ -1,10 +1,10 @@
 import React, { Fragment, useEffect } from "react";
 import { Helmet } from "react-helmet";
-import Navbar from "../../components/layout/Dashboard/Navbar";
-import ChatBox from "../../components/layout/Dashboard/ChatBox";
-import Header from "../../components/layout/Dashboard/Header";
-import SideBar from "../../components/layout/Dashboard/SideBar";
-import Footer from "../../components/layout/Dashboard/Footer";
+import Navbar from "../../components/layout/Navbar";
+import ChatBox from "../../components/layout/ChatBox";
+import Header from "../../components/layout/Header";
+import SideMenu from "../../components/layout/SideMenu";
+import Footer from "../../components/layout/Footer";
 import Body from "../../components/layout/Dashboard/Body";
 import Jsloader from "../../components/resources/jsloader";
 import Preloader from "../../components/layout/Dashboard/Preloader";
@@ -16,7 +16,7 @@ const index = () => {
         <Navbar />
         <ChatBox />
         <Header />
-        <SideBar />
+        <SideMenu />
         <div className="content-body">
           <Body />
         </div>

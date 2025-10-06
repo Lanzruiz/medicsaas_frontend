@@ -1,5 +1,5 @@
 import React from "react";
-import Calendar from "./icons/Calendar";
+import Calendar from "../../resources/icons/Calendar";
 import FilterDropDown from "./FilterDropDown";
 const BodyHeader = () => {
   return (
