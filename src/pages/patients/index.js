@@ -10,6 +10,20 @@ import Jsloader from "../../components/resources/jsloader";
 import Preloader from "../../components/layout/Dashboard/Preloader";
 
 const index = () => {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  useEffect(() => {
+    // Check if a reload has already happened in this session
+    localStorage.removeItem("hasReloadedDashboard");
+    localStorage.removeItem("hasReloadedListPatients");
+    const hasReloadedPatients = localStorage.getItem("hasReloadedPatients");
+
+    if (!hasReloadedPatients) {
+      // If not reloaded, set the flag and perform the reload
+      localStorage.setItem("hasReloadedPatients", "true");
+      window.location.reload();
+    }
+  }, []); // The empty dependency array ensures this effect runs only once on mount
+
   return (
     <Fragment>
       <Preloader />

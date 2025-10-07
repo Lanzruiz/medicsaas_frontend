@@ -4,6 +4,7 @@ import Login from "./pages/auth/login";
 import Register from "./pages/auth/register";
 import Dashboard from "./pages/dashboard";
 import Patients from "./pages/patients";
+import ListOfPatients from "./pages/patients/ListOfPatients";
 import "./App.css";
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
         <Route exact path="/login" element={<Login />} />
         <Route exact path="/dashboard" element={<Dashboard />} />
         <Route exact path="/patients" element={<Patients />} />
+        <Route exact path="/list-patients" element={<ListOfPatients />} />
       </Routes>
     </Fragment>
   );

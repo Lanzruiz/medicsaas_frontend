@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Navigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import PatientIcon from "../resources/icons/PatientIcon";
 import NursesIcon from "../resources/icons/NursesIcon";
 import DashboardIcon from "../resources/icons/DashboardIcon";
@@ -12,15 +12,11 @@ const SideMenu = () => {
       <div className="deznav-scroll">
         <ul className="metismenu" id="menu">
           <li>
-            <a
-              className="has-arrow ai-icon"
-              href="javascript:void()"
-              aria-expanded="false"
-            >
+            <Link to="/dashboard" className="ai-icon" aria-expanded="false">
               <DashboardIcon />
               <span className="nav-text">Dashboard</span>
-            </a>
-            <ul aria-expanded="false">
+            </Link>
+            {/* <ul aria-expanded="false">
               <li>
                 <a href="index.html">Dashboard</a>
               </li>
@@ -39,17 +35,28 @@ const SideMenu = () => {
               <li>
                 <a href="page-general-customers.html">General Customers</a>
               </li>
-            </ul>
+            </ul> */}
           </li>
           <li>
             <Link
               to="/patients"
-              className="fi fi-rr-users"
+              className="has-arrow ai-icon"
               aria-expanded="false"
             >
               <PatientIcon />
               <span className="nav-text">Patients</span>
             </Link>
+            <ul aria-expanded="false">
+              <li>
+                <Link to="/patients">Analytics</Link>
+              </li>
+              <li>
+                <Link to="/list-patients">List of Patients</Link>
+              </li>
+              <li>
+                <a href="page-review.html">Add Patient</a>
+              </li>
+            </ul>
           </li>
           <li>
             <a className="fi fi-rr-users" aria-expanded="false">
