@@ -11,7 +11,7 @@ const SideMenu = () => {
     <div className="deznav">
       <div className="deznav-scroll">
         <ul className="metismenu" id="menu">
-          <li className="mm-active">
+          <li>
             <a
               className="has-arrow ai-icon"
               href="javascript:void()"
@@ -22,9 +22,7 @@ const SideMenu = () => {
             </a>
             <ul aria-expanded="false">
               <li>
-                <a className="mm-active" href="index.html">
-                  Dashboard
-                </a>
+                <a href="index.html">Dashboard</a>
               </li>
               <li>
                 <a href="page-analytics.html">Analytics</a>

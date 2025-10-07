@@ -49,6 +49,7 @@
     />
     <link href="css/style.css" rel="stylesheet" />
     <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet" />
+    <link href="vendor/owl-carousel/owl.carousel.css" rel="stylesheet" />
   </head>
   <body>
     <div id="root"></div>
@@ -65,4 +66,93 @@
   <script src="vendor/peity/jquery.peity.min.js"></script>
 
   <script src="js/dashboard/dashboard-1.js"></script>
+  <script src="vendor/owl-carousel/owl.carousel.js"></script>
+
+  <script>
+    function widgetCarousel() {
+      /*  testimonial one function by = owl.carousel.js */
+      jQuery(".widget-carousel").owlCarousel({
+        loop: false,
+        margin: 30,
+        nav: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        navSpeed: 3000,
+        paginationSpeed: 3000,
+        slideSpeed: 3000,
+        smartSpeed: 3000,
+        dots: false,
+        navText: [
+          '<i class="fa fa-caret-left"></i>',
+          '<i class="fa fa-caret-right"></i>',
+        ],
+        responsive: {
+          0: {
+            items: 1,
+          },
+
+          480: {
+            items: 1,
+            stagePadding: 100,
+          },
+          767: {
+            items: 2,
+          },
+
+          1200: {
+            items: 3,
+          },
+          1750: {
+            items: 4,
+          },
+        },
+      });
+    }
+    function carouselReview() {
+      /*  testimonial one function by = owl.carousel.js */
+      jQuery(".testimonial-one").owlCarousel({
+        loop: true,
+        autoplay: true,
+        margin: 0,
+        nav: false,
+        dots: false,
+        navText: [""],
+        responsive: {
+          0: {
+            items: 1,
+          },
+
+          480: {
+            items: 1,
+          },
+
+          767: {
+            items: 1,
+          },
+          1000: {
+            items: 1,
+          },
+          1400: {
+            items: 1,
+          },
+        },
+      });
+      /*Custom Navigation work*/
+      jQuery("#next-slide").on("click", function () {
+        $(".testimonial-one").trigger("next.owl.carousel");
+      });
+
+      jQuery("#prev-slide").on("click", function () {
+        $(".testimonial-one").trigger("prev.owl.carousel");
+      });
+      /*Custom Navigation work*/
+    }
+
+    jQuery(window).on("load", function () {
+      setTimeout(function () {
+        widgetCarousel();
+        carouselReview();
+      }, 1000);
+    });
+  </script>
 </html>

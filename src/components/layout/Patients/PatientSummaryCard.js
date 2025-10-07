@@ -115,7 +115,7 @@ const PatientSummaryCard = () => {
                   </span>
                 </div>
                 <div className="d-flex align-items-center  mb-3">
-                  <p class="mb-0 fs-14 me-2 col-4 col-xxl-2 px-0">
+                  <p className="mb-0 fs-14 me-2 col-4 col-xxl-2 px-0">
                     Immunities (24%)
                   </p>
                   <div
