@@ -1,5 +1,6 @@
 import React from "react";
 import OrdersIcon from "../../../resources/icons/OrdersIcon";
+import MedicineIcon from "../../../resources/icons/MedicineIcon";
 const TotalMedsBox = () => {
   return (
     <div className="col-xl-3 col-xxl-3 col-lg-6 col-md-6 col-sm-6">
@@ -7,13 +8,13 @@ const TotalMedsBox = () => {
         <div className="card-body p-4">
           <div className="media ai-icon d-flex">
             <span className="me-3 bgl-primary text-primary">
-              <OrdersIcon />
+              <MedicineIcon />
             </span>
             <div className="media-body">
               <h3 className="mb-0 text-black">
                 <span className="counter ms-0">20</span>
               </h3>
-              <p className="mb-0">Total Orders</p>
+              <p className="mb-0">Total Medicines</p>
             </div>
           </div>
         </div>

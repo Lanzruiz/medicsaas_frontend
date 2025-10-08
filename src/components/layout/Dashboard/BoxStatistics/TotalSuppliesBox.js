@@ -1,5 +1,6 @@
 import React from "react";
 import PeopleIcon from "../../../resources/icons/PeopleIcon";
+import SuppliesIcon from "../../../resources/icons/SuppliesIcon";
 
 const TotalSuppliesBox = () => {
   return (
@@ -8,13 +9,13 @@ const TotalSuppliesBox = () => {
         <div className="card-body p-4">
           <div className="media ai-icon d-flex">
             <span className="me-3 bgl-primary text-primary">
-              <PeopleIcon />
+              <SuppliesIcon />
             </span>
             <div className="media-body">
               <h3 className="mb-0 text-black">
                 <span className="counter ms-0">65</span>
               </h3>
-              <p className="mb-0">Total Client</p>
+              <p className="mb-0">Total Supplies</p>
             </div>
           </div>
         </div>

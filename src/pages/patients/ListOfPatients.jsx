@@ -6,6 +6,7 @@ import Header from "../../components/layout/Header";
 import SideMenu from "../../components/layout/SideMenu";
 import Footer from "../../components/layout/Footer";
 import BodyPatients from "../../components/layout/Patients/BodyPatients";
+import PatientsList from "../../components/layout/Patients/PatientsList";
 import Jsloader from "../../components/resources/jsloader";
 import Preloader from "../../components/layout/Dashboard/Preloader";
 
@@ -35,7 +36,7 @@ const ListOfPatients = () => {
         <Header />
         <SideMenu />
         <div className="content-body">
-          <BodyPatients />
+          <PatientsList />
         </div>
         <Footer />
       </div>

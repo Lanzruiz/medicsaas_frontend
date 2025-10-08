@@ -49,6 +49,10 @@
     />
     <link href="css/style.css" rel="stylesheet" />
     <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet" />
+    <link
+      href="vendor/datatables/css/jquery.dataTables.min.css"
+      rel="stylesheet"
+    />
     <link href="vendor/owl-carousel/owl.carousel.css" rel="stylesheet" />
   </head>
   <body>
@@ -155,5 +159,21 @@
         carouselReview();
       }, 1000);
     });
+  </script>
+  <script src="vendor/datatables/js/jquery.dataTables.min.js"></script>
+
+  <script>
+    (function ($) {
+      var table = $("#example5").DataTable({
+        searching: false,
+        paging: true,
+        select: false,
+        //info: false,
+        lengthChange: false,
+      });
+      $("#example tbody").on("click", "tr", function () {
+        var data = table.row(this).data();
+      });
+    })(jQuery);
   </script>
 </html>
