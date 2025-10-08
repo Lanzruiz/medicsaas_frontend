@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import OrdersIcon from "../../../resources/icons/OrdersIcon";
 import MedicineIcon from "../../../resources/icons/MedicineIcon";
 const TotalMedsBox = () => {
   return (
-    <div className="col-xl-3 col-xxl-3 col-lg-6 col-md-6 col-sm-6">
+    <Link className="col-xl-3 col-xxl-3 col-lg-6 col-md-6 col-sm-6">
       <div className="widget-stat card">
         <div className="card-body p-4">
           <div className="media ai-icon d-flex">
@@ -19,7 +20,7 @@ const TotalMedsBox = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

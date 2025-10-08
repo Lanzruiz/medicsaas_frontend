@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Capa_1 from "../resources/icons/Capa_1";
 import Bill from "../resources/icons/Bill";
 import Dropdown from "../resources/icons/Dropdown";
@@ -175,10 +176,10 @@ const Header = () => {
                     <Dropdown />
                     <span className="ms-2">Inbox </span>
                   </a>
-                  <a href="./page-login.html" className="dropdown-item ai-icon">
+                  <Link to="/login" className="dropdown-item ai-icon">
                     <Logout />
                     <span className="ms-2">Logout </span>
-                  </a>
+                  </Link>
                 </div>
               </li>
             </ul>
