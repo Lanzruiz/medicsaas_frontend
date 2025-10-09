@@ -16,6 +16,7 @@ const ListOfPatients = () => {
     // Check if a reload has already happened in this session
     localStorage.removeItem("hasReloadedDashboard");
     localStorage.removeItem("hasReloadedPatients");
+    localStorage.removeItem("hasReloadedAddPatients");
     const hasReloadedListPatients = localStorage.getItem(
       "hasReloadedListPatients"
     );

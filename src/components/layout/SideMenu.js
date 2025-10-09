@@ -54,7 +54,7 @@ const SideMenu = () => {
                 <Link to="/list-patients">List of Patients</Link>
               </li>
               <li>
-                <a href="page-review.html">Add Patient</a>
+                <Link to="/add-patient">Add Patient</Link>
               </li>
             </ul>
           </li>

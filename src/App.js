@@ -5,6 +5,7 @@ import Register from "./pages/auth/register";
 import Dashboard from "./pages/dashboard";
 import Patients from "./pages/patients";
 import ListOfPatients from "./pages/patients/ListOfPatients";
+import AddPatient from "./pages/patients/AddPatient";
 import "./App.css";
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
         <Route exact path="/dashboard" element={<Dashboard />} />
         <Route exact path="/patients" element={<Patients />} />
         <Route exact path="/list-patients" element={<ListOfPatients />} />
+        <Route exact path="/add-patient" element={<AddPatient />} />
       </Routes>
     </Fragment>
   );

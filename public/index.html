@@ -54,6 +54,10 @@
       rel="stylesheet"
     />
     <link href="vendor/owl-carousel/owl.carousel.css" rel="stylesheet" />
+    <link
+      href="vendor/jquery-smartwizard/dist/css/smart_wizard.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div id="root"></div>
@@ -158,6 +162,14 @@
         widgetCarousel();
         carouselReview();
       }, 1000);
+    });
+  </script>
+  <script src="./vendor/jquery-smartwizard/dist/js/jquery.smartWizard.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      // SmartWizard initialize
+      $("#smartwizard").smartWizard();
     });
   </script>
 </html>

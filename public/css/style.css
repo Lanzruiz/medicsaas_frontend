@@ -20385,3 +20385,11 @@ body > * {
           padding: 11px; } }
 
 /*# sourceMappingURL=style.css.map */
+
+.sw-theme-default {
+    border: 0px solid #eee !important;
+}
+
+.sw-theme-default>.nav {
+    box-shadow: 0 .125rem .25rem rgb(255 255 255 / 10%) !important;
+}
