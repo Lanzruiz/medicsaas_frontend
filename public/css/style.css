@@ -20393,3 +20393,6 @@ body > * {
 .sw-theme-default>.nav {
     box-shadow: 0 .0rem .0rem rgb(255 255 255 / 10%) !important;
 }
+.margin-top-50 {
+  margin-top: 50px !important;
+}
