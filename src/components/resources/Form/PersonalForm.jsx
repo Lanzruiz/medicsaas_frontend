@@ -1,4 +1,5 @@
 import React from "react";
+import BasicDatePicker from "./BasicDatePicker";
 
 const PersonalForm = () => {
   return (
@@ -35,16 +36,9 @@ const PersonalForm = () => {
         <div className="col-lg-6 mb-2">
           <div className="form-group">
             <label className="form-label">
-              Email Address<span className="required">*</span>
+              Date of Birth<span className="required">*</span>
             </label>
-            <input
-              type="email"
-              className="form-control"
-              id="inputGroupPrepend2"
-              aria-describedby="inputGroupPrepend2"
-              placeholder="example@example.com.com"
-              required
-            />
+            <BasicDatePicker />
           </div>
         </div>
         <div className="col-lg-6 mb-2">
