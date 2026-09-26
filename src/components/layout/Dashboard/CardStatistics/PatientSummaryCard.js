@@ -9,7 +9,7 @@ const PatientSummaryCard = () => {
           <div className="mb-3">
             <h4 className="card-title mb-1">Patient Summary</h4>
             <small className="mb-0">
-              Lorem ipsum dolor sit amet, consectetur
+              
             </small>
           </div>
           <div className="card-action card-tabs mb-2">
@@ -289,6 +289,42 @@ const PatientSummaryCard = () => {
                 Manage orders <i className="ti-angle-right ms-1"></i>
               </a>
             </div>
+            <div className="d-flex flex-wrap order-manage p-3 align-items-center mb-4">
+              <a
+                href="javascript:void(0);"
+                className="btn fs-22 text-white py-1 btn-success px-4 me-3"
+              >
+                25
+              </a>
+              <h4 className="mb-0">
+                New Orders{" "}
+                <i className="fa fa-circle text-success ms-1 fs-15"></i>
+              </h4>
+              <a
+                href="javascript:void(0);"
+                className="ms-sm-auto mt-sm-0 mt-2 text-success font-w500"
+              >
+                Manage orders <i className="ti-angle-right ms-1"></i>
+              </a>
+            </div>
+            <div className="d-flex flex-wrap order-manage p-3 align-items-center mb-4">
+              <a
+                href="javascript:void(0);"
+                className="btn fs-22 text-white py-1 btn-success px-4 me-3"
+              >
+                25
+              </a>
+              <h4 className="mb-0">
+                New Orders{" "}
+                <i className="fa fa-circle text-success ms-1 fs-15"></i>
+              </h4>
+              <a
+                href="javascript:void(0);"
+                className="ms-sm-auto mt-sm-0 mt-2 text-success font-w500"
+              >
+                Manage orders <i className="ti-angle-right ms-1"></i>
+              </a>
+            </div>
             <div className="row">
               <div className="col-sm-4 mb-4">
                 <div className="border px-3 py-3 rounded-xl">
@@ -319,7 +355,7 @@ const PatientSummaryCard = () => {
                 <div className="col-xl-9 col-lg-10 col-xxl-8 col-sm-9 col-md-9">
                   <div className="d-flex align-items-center mb-3">
                     <p class="mb-0 fs-14 me-2 col-4 col-xxl-2 px-0">
-                      24%
+                      Private
                     </p>
                     <div
                       className="progress mb-0"
@@ -339,7 +375,7 @@ const PatientSummaryCard = () => {
                   </div>
                   <div className="d-flex align-items-center  mb-3">
                     <p class="mb-0 fs-14 me-2 col-4 col-xxl-2 px-0">
-                      24%
+                      Medic-Care
                     </p>
                     <div
                       className="progress mb-0"
@@ -359,7 +395,7 @@ const PatientSummaryCard = () => {
                   </div>
                   <div className="d-flex align-items-center">
                     <p className="mb-0 fs-14 me-2 col-4 col-xxl-2 px-0">
-                      24%
+                      Cases
                     </p>
                     <div
                       className="progress mb-0"
