@@ -15,8 +15,8 @@ const BodyHeader = () => {
           data-bs-toggle="dropdown"
         >
           <Calendar />
-          <span className="d-block fs-16">Filter Periode</span>
-          <small className="d-block fs-13">4 June 2020 - 4 July 2020</small>
+          
+          <small className="d-block fs-13 margin-left-10px">4 June 2020 - 4 July 2020</small>
         </div>
        
       </div>

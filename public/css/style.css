@@ -361,6 +361,22 @@ h2, .h2 {
   margin-top: 10px !important;
 }
 
+.margin-left-1px {
+  margin-left: 1px !important;
+}
+
+.margin-left-2px {
+  margin-left: 2px !important;
+}
+
+.margin-left-3px {
+  margin-left: 3px !important;
+}
+
+.margin-left-10px {
+  margin-left: 10px !important;
+}
+
 h3, .h3 {
   font-size: calc(1.275rem + 0.3vw); }
   @media (min-width: 1200px) {

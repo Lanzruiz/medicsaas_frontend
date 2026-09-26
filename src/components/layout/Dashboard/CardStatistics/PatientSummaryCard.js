@@ -97,7 +97,7 @@ const PatientSummaryCard = () => {
                 <div className="col-xl-9 col-lg-10 col-xxl-8 col-sm-9 col-md-9">
                   <div className="d-flex align-items-center mb-3">
                     <p class="mb-0 fs-14 me-2 col-4 col-xxl-2 px-0">
-                      24%
+                      Private
                     </p>
                     <div
                       className="progress mb-0"
@@ -117,7 +117,7 @@ const PatientSummaryCard = () => {
                   </div>
                   <div className="d-flex align-items-center  mb-3">
                     <p class="mb-0 fs-14 me-2 col-4 col-xxl-2 px-0">
-                      24%
+                      Medic-Care
                     </p>
                     <div
                       className="progress mb-0"
@@ -137,7 +137,7 @@ const PatientSummaryCard = () => {
                   </div>
                   <div className="d-flex align-items-center">
                     <p className="mb-0 fs-14 me-2 col-4 col-xxl-2 px-0">
-                      24%
+                      Cases
                     </p>
                     <div
                       className="progress mb-0"
@@ -208,7 +208,7 @@ const PatientSummaryCard = () => {
                 <div className="col-xl-9 col-lg-10 col-xxl-8 col-sm-9 col-md-9">
                   <div className="d-flex align-items-center mb-3">
                     <p class="mb-0 fs-14 me-2 col-4 col-xxl-2 px-0">
-                      24%
+                      Private
                     </p>
                     <div
                       className="progress mb-0"
@@ -228,7 +228,7 @@ const PatientSummaryCard = () => {
                   </div>
                   <div className="d-flex align-items-center  mb-3">
                     <p class="mb-0 fs-14 me-2 col-4 col-xxl-2 px-0">
-                      24%
+                      Medic-Care
                     </p>
                     <div
                       className="progress mb-0"
@@ -248,7 +248,7 @@ const PatientSummaryCard = () => {
                   </div>
                   <div className="d-flex align-items-center">
                     <p className="mb-0 fs-14 me-2 col-4 col-xxl-2 px-0">
-                      24%
+                      Cases
                     </p>
                     <div
                       className="progress mb-0"
