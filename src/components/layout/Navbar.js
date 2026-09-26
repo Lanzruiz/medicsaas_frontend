@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <Fragment>
       <div className="nav-header">
-        <a href="index.html" className="brand-logo">
+        <a href="" className="brand-logo">
           <img className="logo-abbr" src="./images/logo.png" alt=""></img>
           <img
             className="logo-compact"
