@@ -16601,7 +16601,10 @@ button {
 
 .custom-dropdown {
   display: inline-block;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem; 
+  margin-top: 1rem;
+  }
+  
   .custom-dropdown .dropdown-menu {
     border: 0rem;
     min-width: 10rem; }

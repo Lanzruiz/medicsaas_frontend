@@ -7,7 +7,7 @@ const PatientSummaryCard = () => {
       <div className="card">
         <div className="card-header border-0 pb-0 d-sm-flex flex-wrap d-block">
           <div className="mb-3">
-            <h4 className="card-title mb-1">Orders Summary</h4>
+            <h4 className="card-title mb-1">Patient Summary</h4>
             <small className="mb-0">
               Lorem ipsum dolor sit amet, consectetur
             </small>
@@ -71,19 +71,19 @@ const PatientSummaryCard = () => {
               <div className="col-sm-4 mb-4">
                 <div className="border px-3 py-3 rounded-xl">
                   <h2 className="fs-32 font-w600 counter">25</h2>
-                  <p className="fs-16 mb-0">On Delivery</p>
+                  <p className="fs-16 mb-0">Private</p>
                 </div>
               </div>
               <div className="col-sm-4 mb-4">
                 <div className="border px-3 py-3 rounded-xl">
                   <h2 className="fs-32 font-w600 counter">60</h2>
-                  <p className="fs-16 mb-0">Delivered</p>
+                  <p className="fs-16 mb-0">Medic-Care</p>
                 </div>
               </div>
               <div className="col-sm-4 mb-4">
                 <div className="border px-3 py-3 rounded-xl">
                   <h2 className="fs-32 font-w600 counter">7</h2>
-                  <p className="fs-16 mb-0">Canceled</p>
+                  <p className="fs-16 mb-0">Cases</p>
                 </div>
               </div>
             </div>
@@ -97,7 +97,7 @@ const PatientSummaryCard = () => {
                 <div className="col-xl-9 col-lg-10 col-xxl-8 col-sm-9 col-md-9">
                   <div className="d-flex align-items-center mb-3">
                     <p class="mb-0 fs-14 me-2 col-4 col-xxl-2 px-0">
-                      Immunities (24%)
+                      24%
                     </p>
                     <div
                       className="progress mb-0"
@@ -117,7 +117,7 @@ const PatientSummaryCard = () => {
                   </div>
                   <div className="d-flex align-items-center  mb-3">
                     <p class="mb-0 fs-14 me-2 col-4 col-xxl-2 px-0">
-                      Immunities (24%)
+                      24%
                     </p>
                     <div
                       className="progress mb-0"
@@ -137,7 +137,7 @@ const PatientSummaryCard = () => {
                   </div>
                   <div className="d-flex align-items-center">
                     <p className="mb-0 fs-14 me-2 col-4 col-xxl-2 px-0">
-                      Immunities (24%)
+                      24%
                     </p>
                     <div
                       className="progress mb-0"
@@ -163,7 +163,7 @@ const PatientSummaryCard = () => {
             <div className="d-flex flex-wrap order-manage p-3 align-items-center mb-4">
               <a
                 href="javascript:void(0);"
-                className="btn fs-22 py-1 btn-success px-4 me-3"
+                className="btn fs-22 text-white py-1 btn-success px-4 me-3"
               >
                 25
               </a>
@@ -182,31 +182,33 @@ const PatientSummaryCard = () => {
               <div className="col-sm-4 mb-4">
                 <div className="border px-3 py-3 rounded-xl">
                   <h2 className="fs-32 font-w600 counter">25</h2>
-                  <p className="fs-16 mb-0">On Delivery</p>
+                  <p className="fs-16 mb-0">Private</p>
                 </div>
               </div>
               <div className="col-sm-4 mb-4">
                 <div className="border px-3 py-3 rounded-xl">
                   <h2 className="fs-32 font-w600 counter">60</h2>
-                  <p className="fs-16 mb-0">Delivered</p>
+                  <p className="fs-16 mb-0">Medic-Care</p>
                 </div>
               </div>
               <div className="col-sm-4 mb-4">
                 <div className="border px-3 py-3 rounded-xl">
                   <h2 className="fs-32 font-w600 counter">7</h2>
-                  <p className="fs-16 mb-0">Canceled</p>
+                  <p className="fs-16 mb-0">Cases</p>
                 </div>
               </div>
             </div>
             <div className="widget-timeline-icon">
               <div className="row align-items-center">
                 <div className="col-xl-3 col-lg-2 col-xxl-4 col-sm-3 col-md-3 my-2 text-center text-sm-left">
-                  <div id="chart2" className="d-inline-block"></div>
+                  <div className="d-inline-block">
+                    <DonutChart />
+                  </div>
                 </div>
                 <div className="col-xl-9 col-lg-10 col-xxl-8 col-sm-9 col-md-9">
                   <div className="d-flex align-items-center mb-3">
-                    <p className="mb-0 fs-14 me-2 col-4 col-xxl-5 px-0">
-                      Immunities (24%)
+                    <p class="mb-0 fs-14 me-2 col-4 col-xxl-2 px-0">
+                      24%
                     </p>
                     <div
                       className="progress mb-0"
@@ -220,13 +222,13 @@ const PatientSummaryCard = () => {
                         <span className="sr-only">60% Complete</span>
                       </div>
                     </div>
-                    <span className="pull-right ms-auto col-1 col-xxl-2 px-0 text-right">
+                    <span className=" ms-auto col-1 col-xxl-2 px-0 text-end">
                       25
                     </span>
                   </div>
                   <div className="d-flex align-items-center  mb-3">
-                    <p className="mb-0 fs-14 me-2 col-4 col-xxl-5 px-0">
-                      Heart Beat (41%)
+                    <p class="mb-0 fs-14 me-2 col-4 col-xxl-2 px-0">
+                      24%
                     </p>
                     <div
                       className="progress mb-0"
@@ -240,13 +242,13 @@ const PatientSummaryCard = () => {
                         <span className="sr-only">60% Complete</span>
                       </div>
                     </div>
-                    <span className="pull-right ms-auto col-1 col-xxl-2 px-0 text-right">
+                    <span className="ms-auto col-1 col-xxl-2 px-0 text-end">
                       60
                     </span>
                   </div>
                   <div className="d-flex align-items-center">
-                    <p className="mb-0 fs-14 me-2 col-4 col-xxl-5 px-0">
-                      Weigth (15%)
+                    <p className="mb-0 fs-14 me-2 col-4 col-xxl-2 px-0">
+                      24%
                     </p>
                     <div
                       className="progress mb-0"
@@ -260,7 +262,7 @@ const PatientSummaryCard = () => {
                         <span className="sr-only">60% Complete</span>
                       </div>
                     </div>
-                    <span className="pull-right ms-auto col-1 col-xxl-2 px-0 text-right">
+                    <span className="ms-auto col-1 col-xxl-2 px-0 text-end">
                       07
                     </span>
                   </div>
@@ -272,7 +274,7 @@ const PatientSummaryCard = () => {
             <div className="d-flex flex-wrap order-manage p-3 align-items-center mb-4">
               <a
                 href="javascript:void(0);"
-                className="btn fs-22 py-1 btn-success px-4 me-3"
+                className="btn fs-22 text-white py-1 btn-success px-4 me-3"
               >
                 25
               </a>
@@ -291,31 +293,33 @@ const PatientSummaryCard = () => {
               <div className="col-sm-4 mb-4">
                 <div className="border px-3 py-3 rounded-xl">
                   <h2 className="fs-32 font-w600 counter">25</h2>
-                  <p className="fs-16 mb-0">On Delivery</p>
+                  <p className="fs-16 mb-0">Private</p>
                 </div>
               </div>
               <div className="col-sm-4 mb-4">
                 <div className="border px-3 py-3 rounded-xl">
                   <h2 className="fs-32 font-w600 counter">60</h2>
-                  <p className="fs-16 mb-0">Delivered</p>
+                  <p className="fs-16 mb-0">Medic-Care</p>
                 </div>
               </div>
               <div className="col-sm-4 mb-4">
                 <div className="border px-3 py-3 rounded-xl">
                   <h2 className="fs-32 font-w600 counter">7</h2>
-                  <p className="fs-16 mb-0">Canceled</p>
+                  <p className="fs-16 mb-0">Cases</p>
                 </div>
               </div>
             </div>
             <div className="widget-timeline-icon">
               <div className="row align-items-center">
                 <div className="col-xl-3 col-lg-2 col-xxl-4 col-sm-3 col-md-3 my-2 text-center text-sm-left">
-                  <div id="chart3" className="d-inline-block"></div>
+                  <div className="d-inline-block">
+                    <DonutChart />
+                  </div>
                 </div>
                 <div className="col-xl-9 col-lg-10 col-xxl-8 col-sm-9 col-md-9">
                   <div className="d-flex align-items-center mb-3">
-                    <p className="mb-0 fs-14 me-2 col-4 col-xxl-5 px-0">
-                      Immunities (24%)
+                    <p class="mb-0 fs-14 me-2 col-4 col-xxl-2 px-0">
+                      24%
                     </p>
                     <div
                       className="progress mb-0"
@@ -329,13 +333,13 @@ const PatientSummaryCard = () => {
                         <span className="sr-only">60% Complete</span>
                       </div>
                     </div>
-                    <span className="pull-right ms-auto col-1 col-xxl-2 px-0 text-right">
+                    <span className=" ms-auto col-1 col-xxl-2 px-0 text-end">
                       25
                     </span>
                   </div>
                   <div className="d-flex align-items-center  mb-3">
-                    <p className="mb-0 fs-14 me-2 col-4 col-xxl-5 px-0">
-                      Heart Beat (41%)
+                    <p class="mb-0 fs-14 me-2 col-4 col-xxl-2 px-0">
+                      24%
                     </p>
                     <div
                       className="progress mb-0"
@@ -349,13 +353,13 @@ const PatientSummaryCard = () => {
                         <span className="sr-only">60% Complete</span>
                       </div>
                     </div>
-                    <span className="pull-right ms-auto col-1 col-xxl-2 px-0 text-right">
+                    <span className="ms-auto col-1 col-xxl-2 px-0 text-end">
                       60
                     </span>
                   </div>
                   <div className="d-flex align-items-center">
-                    <p className="mb-0 fs-14 me-2 col-4 col-xxl-5 px-0">
-                      Weigth (15%)
+                    <p className="mb-0 fs-14 me-2 col-4 col-xxl-2 px-0">
+                      24%
                     </p>
                     <div
                       className="progress mb-0"
@@ -369,7 +373,7 @@ const PatientSummaryCard = () => {
                         <span className="sr-only">60% Complete</span>
                       </div>
                     </div>
-                    <span className="pull-right ms-auto col-1 col-xxl-2 px-0 text-right">
+                    <span className="ms-auto col-1 col-xxl-2 px-0 text-end">
                       07
                     </span>
                   </div>
@@ -377,6 +381,7 @@ const PatientSummaryCard = () => {
               </div>
             </div>
           </div>
+           
         </div>
       </div>
     </div>
