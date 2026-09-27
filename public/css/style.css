@@ -20064,7 +20064,9 @@ span#counter {
   fill: white; }
 
 .form-group {
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem; 
+  color: black;
+}
 
 .ck-content {
   height: 200px; }

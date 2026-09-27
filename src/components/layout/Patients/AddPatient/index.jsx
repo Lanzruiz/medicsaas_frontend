@@ -3,13 +3,15 @@ import Humanbody from "../../../resources/HumanBody";
 import MenBackBodySvgComponent from "../../../resources/HumanBody/MenBackBodySvgComponent";
 import Calendar from "../../../resources/icons/Calendar";
 import LightningIcon from "../../../resources/icons/LightningIcon";
+import PatientIcon from "../../../resources/icons/PatientIcon";
+
 import FormWizard from "./FormWizard";
 const index = () => {
   return (
     <Fragment>
       <div className="form-head d-flex mb-3 align-items-start">
         <div className="me-auto d-none d-lg-block">
-          <h2 className="text-primary font-w600 mb-0">Add Patient</h2>
+          <h2 className="text-primary font-w600 mb-0 margin-top-10px">Add Patient</h2>
           <p className="mb-0">Here is your order list data</p>
         </div>
         <div className="dropdown custom-dropdown">
@@ -44,15 +46,26 @@ const index = () => {
         <div className="dropdown custom-dropdown ms-3">
           <button
             type="button"
-            className="btn btn-primary light d-flex align-items-center svg-btn"
+            className="btn btn-success d-flex align-items-center svg-btn"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i className="fa-solid fa-user-plus scale5 ms-3"></i>
+            <span className="fs-16 ms-3">Add New Patient</span>
+            
+          </button>
+          {/* <button
+            type="button"
+            className="btn btn-primary btn-success light d-flex align-items-center svg-btn"
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
             <Calendar />
             <span className="fs-16 ms-3">Today</span>
             <i className="fa fa-angle-down scale5 ms-3"></i>
-          </button>
-          <div className="dropdown-menu dropdown-menu-right">
+          </button> */}
+           
+          {/* <div className="dropdown-menu dropdown-menu-right">
             <a className="dropdown-item" href="#">
               Monday
             </a>
@@ -74,7 +87,7 @@ const index = () => {
             <a className="dropdown-item" href="#">
               Sunday
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="row">
@@ -86,6 +99,8 @@ const index = () => {
             <div className="card-body">
               <FormWizard />
             </div>
+           
+            
           </div>
         </div>
       </div>

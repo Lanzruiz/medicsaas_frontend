@@ -6,7 +6,7 @@ const BodyHeader = () => {
   return (
     <div className="form-head d-flex mb-3 align-items-start">
       <div className="me-auto d-none d-lg-block">
-        <h2 className="text-primary font-w600 mb-0">Patients</h2>
+        <h2 className="text-primary font-w600 mb-0 margin-top-10px">Patients</h2>
         <p className="mb-0">Welcome to Davur Admin!</p>
       </div>
 

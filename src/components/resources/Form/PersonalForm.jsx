@@ -41,7 +41,7 @@ const PersonalForm = () => {
             <BasicDatePicker />
           </div>
         </div>
-        <div className="col-lg-6 mb-2">
+        {/* <div className="col-lg-6 mb-2">
           <div className="form-group">
             <label className="form-label">
               Phone Number<span className="required">*</span>
@@ -54,15 +54,72 @@ const PersonalForm = () => {
               required
             />
           </div>
-        </div>
-        <div className="col-lg-12 mb-3">
+        </div> */}
+         <div className="col-lg-6 mb-2">
           <div className="form-group">
             <label className="form-label">
-              Where are you from<span className="required">*</span>
+              Nick Name<span className="required">*</span>
             </label>
-            <input type="text" name="place" className="form-control" required />
+            <input
+              type="text"
+              name="nickName"
+              className="form-control"
+              placeholder="Enter your nickname"
+              required
+            />
           </div>
+        </div> 
+       
+     
+      </div>
+      <div className="row">
+        <div className="card-header">
+          <h4 className="card-title">Guardian Information</h4>
         </div>
+      </div>
+      <div className="row">
+         <div className="col-lg-6 mb-2 margin-top-10px">
+            <div className="form-group">
+              <label className="form-label">
+                 First Name<span className="required">*</span>
+              </label>
+              <input
+                type="text"
+                name="guardianFirstName"
+                className="form-control"
+                placeholder="Enter guardian's first name"
+                required
+               />
+            </div>
+          </div> 
+          <div className="col-lg-6 mb-2 margin-top-10px">
+            <div className="form-group">
+              <label className="form-label">
+                 Guardian's Last Name<span className="required">*</span>
+              </label>
+              <input
+                type="text"
+                name="guardianLastName"
+                className="form-control"
+                placeholder="Enter guardian's last name"
+                required
+               />
+            </div>
+          </div> 
+          <div className="col-lg-6 mb-2 margin-top-10px">
+            <div className="form-group">
+              <label className="form-label">
+                 First Name<span className="required">*</span>
+              </label>
+              <input
+                type="text"
+                name="guardianFirstName"
+                className="form-control"
+                placeholder="Enter guardian's first name"
+                required
+               />
+            </div>
+          </div> 
       </div>
     </div>
   );

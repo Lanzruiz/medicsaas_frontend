@@ -16,7 +16,7 @@ const ListBranchs = () => {
       <div className="card-body tab-content pt-3">
         <div className="tab-pane fade show active" id="monthly">
           <div
-            className="height300 dz-scroll loadmore-content"
+            className="height400 dz-scroll loadmore-content"
             id="sellingItemsContent"
           >
             <div className="media mb-4 items-list-2">
