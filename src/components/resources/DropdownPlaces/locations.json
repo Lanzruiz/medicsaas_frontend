@@ -1,0 +1,96 @@
+{
+  "United States": {
+    "Alabama": {
+        "Abbeville": [
+
+        ]
+
+    },
+    "California": {
+      "Los Angeles": [
+        "Hollywood",
+        "Downtown Los Angeles",
+        "Koreatown",
+        "Silver Lake"
+      ],
+      "San Diego": [
+        "La Jolla",
+        "North Park",
+        "Pacific Beach",
+        "Gaslamp Quarter"
+      ],
+      "San Francisco": [
+        "Mission District",
+        "SoMa",
+        "Chinatown",
+        "Nob Hill"
+      ]
+    },
+    "New York": {
+      "New York City": [
+        "Manhattan",
+        "Brooklyn",
+        "Queens",
+        "Bronx",
+        "Staten Island"
+      ],
+      "Buffalo": [
+        "Elmwood Village",
+        "Allentown",
+        "North Buffalo"
+      ]
+    },
+    "Texas": {
+      "Houston": [
+        "Downtown",
+        "Midtown",
+        "Montrose",
+        "The Heights"
+      ],
+      "Dallas": [
+        "Downtown",
+        "Deep Ellum",
+        "Uptown",
+        "Oak Lawn"
+      ],
+      "Austin": [
+        "Downtown",
+        "East Austin",
+        "South Congress",
+        "Zilker"
+      ]
+    },
+    "Florida": {
+      "Miami": [
+        "Brickell",
+        "Little Havana",
+        "Wynwood",
+        "Coral Way"
+      ],
+      "Orlando": [
+        "Downtown",
+        "Lake Nona",
+        "Baldwin Park"
+      ],
+      "Tampa": [
+        "Downtown",
+        "Ybor City",
+        "Hyde Park"
+      ]
+    },
+    "Washington": {
+      "Seattle": [
+        "Bellevue",
+        "Downtown",
+        "Capitol Hill",
+        "Ballard",
+        "Queen Anne"
+      ],
+      "Tacoma": [
+        "Downtown",
+        "Hilltop",
+        "North End"
+      ]
+    }
+  }
+}

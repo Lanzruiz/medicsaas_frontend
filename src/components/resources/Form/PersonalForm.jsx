@@ -1,5 +1,6 @@
 import React from "react";
 import BasicDatePicker from "./BasicDatePicker";
+import DropdownPlaces from "../DropdownPlaces/DropdownPlaces";
 
 const PersonalForm = () => {
   return (
@@ -95,7 +96,7 @@ const PersonalForm = () => {
           <div className="col-lg-6 mb-2 margin-top-10px">
             <div className="form-group">
               <label className="form-label">
-                 Guardian's Last Name<span className="required">*</span>
+                 Last Name<span className="required">*</span>
               </label>
               <input
                 type="text"
@@ -109,17 +110,48 @@ const PersonalForm = () => {
           <div className="col-lg-6 mb-2 margin-top-10px">
             <div className="form-group">
               <label className="form-label">
-                 First Name<span className="required">*</span>
+                 Email<span className="required">*</span>
               </label>
               <input
-                type="text"
-                name="guardianFirstName"
+                type="email"
+                name="guardianEmail"
                 className="form-control"
-                placeholder="Enter guardian's first name"
+                placeholder="Enter guardian's email"
                 required
                />
             </div>
           </div> 
+           <div className="col-lg-6 mb-2 margin-top-10px">
+            <div className="form-group">
+              <label className="form-label">
+                 Phone Number<span className="required">*</span>
+              </label>
+              <input
+                type="tel"
+                name="guardianPhone"
+                className="form-control"
+                placeholder="Enter guardian's phone number"
+                required
+               />
+            </div>
+          </div> 
+          
+          < DropdownPlaces  />
+           <div className="col-lg-6 mb-2 margin-top-10px">
+            <div className="form-group">
+              <label className="form-label">
+                 Relationship to Patient<span className="required">*</span>
+              </label>
+              <input
+                type="text"
+                name="guardianRelationship"
+                className="form-control"
+                placeholder="Enter relationship to patient"
+                required
+               />
+            </div>
+          </div> 
+
       </div>
     </div>
   );
