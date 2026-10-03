@@ -89,7 +89,7 @@ const PersonalForm = () => {
             <label className="form-label">
               Job<span className="required">*</span>
             </label>
-            <select class="form-control">
+            <select className="form-control">
                 <option value="">Select Job</option>
                 <option value="engineer">Engineer</option>
                 <option value="doctor">Doctor</option>
