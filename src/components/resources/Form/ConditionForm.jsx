@@ -2,17 +2,14 @@ import React from "react";
 import BasicDatePicker from "./BasicDatePicker";
 import DropdownPlaces from "../DropdownPlaces/DropdownPlaces";
 import FemaleAnatomy from "../FemaleAnatomy/index.jsx";
+import MaleAnatomy from "../MaleAnatomy/index.jsx";
 
 const ConditionForm = () => {
   return (
     <div id="wizard_Service" className="tab-pane margin-top-50" role="tabpanel">
       <div className="row">
         <div className="col-lg-6 mb-2">
-            <div class="preview">
-               <div id="organswrapper" class="col-md-8 m-top-20">
-                  <FemaleAnatomy />
-               </div>
-            </div>
+            <MaleAnatomy />    
         </div>
         <div className="col-lg-6 mb-2">
           <div className="form-group">
@@ -91,8 +88,6 @@ const ConditionForm = () => {
                
           </div>
         </div>
-        
-        < DropdownPlaces  />
        
      
       </div>

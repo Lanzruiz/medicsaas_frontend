@@ -1,0 +1,182 @@
+.female-anatomy {
+  --anatomy-ink: #343a3c;
+  --anatomy-accent: #c54858;
+  --anatomy-highlight: #d94c5d;
+  color: var(--anatomy-ink);
+  position: relative;
+  width: min(100%, 680px);
+  margin: 0 auto;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+.female-anatomy__toolbar {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  padding: 12px 0;
+}
+
+.female-anatomy__view-button {
+  min-width: 88px;
+  padding: 8px 14px;
+  border: 1px solid #c9cece;
+  background: #fff;
+  color: var(--anatomy-ink);
+  font: inherit;
+  cursor: pointer;
+}
+
+.female-anatomy__view-button:first-child {
+  border-radius: 4px 0 0 4px;
+}
+
+.female-anatomy__view-button:last-child {
+  border-radius: 0 4px 4px 0;
+}
+
+.female-anatomy__view-button.is-active {
+  background: #e9dadd;
+  border-color: var(--anatomy-accent);
+  color: #702d37;
+}
+
+.female-anatomy__view-button:focus-visible,
+.female-anatomy__close:focus-visible {
+  outline: 2px solid var(--anatomy-accent);
+  outline-offset: 2px;
+}
+
+.female-anatomy__stage {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  background: #f0f0f0;
+  min-height: 240px;
+  touch-action: manipulation;
+}
+
+.female-anatomy__svg {
+  display: block;
+  width: auto;
+  height: min(80vh, 1320px);
+  max-width: 100%;
+  aspect-ratio: 680 / 1320;
+  margin: 0;
+}
+
+.female-anatomy__svg [data-anatomy-id] {
+  fill: var(--anatomy-highlight) !important;
+  fill-opacity: 0 !important;
+  stroke: #e17882 !important;
+  stroke-opacity: 1 !important;
+  cursor: pointer;
+  transition: fill-opacity 120ms ease;
+}
+
+.female-anatomy__svg [data-anatomy-id]:hover,
+.female-anatomy__svg [data-anatomy-id]:focus-visible {
+  fill-opacity: 0.28 !important;
+  outline: none;
+}
+
+.female-anatomy__svg [data-anatomy-id].is-selected {
+  fill-opacity: 0.42 !important;
+}
+
+.female-anatomy__svg .go_bck_frontback,
+.female-anatomy__svg .go_frt_frontback {
+  fill: #d94c5d;
+  fill-opacity: 0;
+  cursor: pointer;
+  transition: fill-opacity 120ms ease;
+}
+
+.female-anatomy__svg .go_bck_frontback:hover,
+.female-anatomy__svg .go_frt_frontback:hover {
+  fill-opacity: 0.24;
+}
+
+.female-anatomy__tooltip {
+  position: absolute;
+  z-index: 2;
+  max-width: 204px;
+  padding: 7px 9px;
+  border: 1px solid #9b777b;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 2px 7px rgba(24, 24, 24, 0.18);
+  color: #343a3c;
+  font-size: 13px;
+  line-height: 1.3;
+  pointer-events: none;
+}
+
+.female-anatomy__backdrop {
+  position: fixed;
+  z-index: 20;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: rgba(23, 27, 28, 0.42);
+}
+
+.female-anatomy__dialog {
+  position: relative;
+  width: min(100%, 480px);
+  padding: 28px;
+  border-top: 3px solid var(--anatomy-accent);
+  background: #fff;
+  box-shadow: 0 14px 45px rgba(0, 0, 0, 0.2);
+}
+
+.female-anatomy__dialog h2 {
+  margin: 0 0 14px;
+  color: var(--anatomy-ink);
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+.female-anatomy__dialog p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.female-anatomy__dialog .female-anatomy__eyebrow {
+  margin-bottom: 7px;
+  color: #7d6669;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.female-anatomy__close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  width: 32px;
+  height: 32px;
+  border: 0;
+  background: transparent;
+  color: #42494a;
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .female-anatomy__svg {
+    height: min(76vh, 1320px);
+  }
+
+  .female-anatomy__stage {
+    min-height: 180px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .female-anatomy__svg [data-anatomy-id],
+  .female-anatomy__svg .go_bck_frontback,
+  .female-anatomy__svg .go_frt_frontback {
+    transition: none;
+  }
+}
