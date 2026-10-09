@@ -31,10 +31,15 @@ const regionLabels = [
   "FOOT [LT]",
 ];
 
-const FrontBody = ({ className = "", onPartSelect, ...svgProps }) => {
+const FrontBody = ({ className = "", onPartSelect, onViewChange, ...svgProps }) => {
   const [selectedId, setSelectedId] = React.useState(null);
 
   function selectPart(event) {
+    if (event.target.closest?.(".go_bck_frontback")) {
+      onViewChange?.("back");
+      return;
+    }
+
     const path = event.target.closest?.('[data-anatomy-id]');
     if (!path || !event.currentTarget.contains(path)) return;
 
@@ -49,6 +54,12 @@ const FrontBody = ({ className = "", onPartSelect, ...svgProps }) => {
   }
 
   function handleKeyDown(event) {
+    const viewButton = event.target.closest?.(".go_bck_frontback");
+    if (viewButton && (event.key === "Enter" || event.key === " ")) {
+      event.preventDefault();
+      onViewChange?.("back");
+      return;
+    }
     if (event.key !== "Enter" && event.key !== " ") return;
     if (!event.target.matches?.("[data-anatomy-id]")) return;
     event.preventDefault();
@@ -338,6 +349,9 @@ const FrontBody = ({ className = "", onPartSelect, ...svgProps }) => {
       stroke="#f66"
       d="M779 1329H599v-270h180z"
       className="go_bck go_bck_frontback"
+      role="button"
+      tabIndex="0"
+      aria-label="Show back view"
       vectorEffect="non-scaling-stroke"
     ></path>
   </svg>
